@@ -1,16 +1,23 @@
 # flutter_vrt_sample
 
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+$ make setup/app
+$ export REG_GITHUB_CLIENT_ID=XXXXXX
+$ export S3_BUCKET_NAME=XXXXXX
+$ export AWS_ACCESS_KEY_ID=XXXXXX
+$ export AWS_SECRET_ACCESS_KEY=XXXXXX
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Generate screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+$ make test/golden
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Compare screenshots and Upload the results to S3
+
+```bash
+$ make run/reg-suit
+```
