@@ -10,7 +10,7 @@ void main() {
         Device.phone,
         Device.iphone11,
       ])
-      ..addScenario(widget: const MyHomePage(title: 'Flutter Demo Home Page'));
+      ..addScenario(widget: const MyHomePage(title: 'My Page'));
 
     await tester.pumpDeviceBuilder(builder);
 
@@ -18,7 +18,7 @@ void main() {
   });
 
   testGoldens('Generate CountText screenshots', (tester) async {
-    const countText = CountText(1234567890);
+    const countText = CountText(0987654321);
     final builder = GoldenBuilder.column(wrap: minSizeFrame)
       ..addScenario('CountText', countText)
       ..addTextScaleScenario('text 2x', countText, textScaleFactor: 2);
