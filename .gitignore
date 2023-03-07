@@ -48,3 +48,5 @@ app.*.map.json
 
 # VRT
 test/golden/goldens/*.png
+node_modules/
+.reg/
